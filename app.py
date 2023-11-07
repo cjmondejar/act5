@@ -6,7 +6,7 @@ from flask import Flask, request, render_template
 app = Flask(__name__)
 
 # Load the SVM model trained for credit card eligibility
-model = pickle.load(open('models/model_act5.pkl', 'rb'))
+model = pickle.load(open('model5_act5.pkl', 'rb'))
 
 
 @app.route('/')
